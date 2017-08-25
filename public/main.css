@@ -1,0 +1,39 @@
+body {
+  font-family: Arial;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+h1 {
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #bcd1f2;
+}
+
+.doneClass {
+    text-decoration: line-through;
+    color: #f2a9b2;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li button {
+    border-radius: 99999px;
+    color: white;
+    background-color: black;
+    margin-left: 4px;
+}
+
+#app {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #b8edc4;
+}

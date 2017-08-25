@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <h1>To-Do List</h1>
+        <div id="app">
+            <form v-on:submit="createTodo">
+                <input v-model="todoText" placeholder="Todo Text">
+                <input type="submit" value="Submit!">
+            </form>
+
+            <ul>
+                <li
+                    v-on:click="markDone(todo)"
+                    v-for="todo in todos"
+                    v-bind:class="{doneClass: todo.done}"
+                >
+                    {{todo.text}} <button v-on:click="deleteTodo(todo, $event)">X</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
